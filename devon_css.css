@@ -11,13 +11,12 @@ https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+j
 body {
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 12px;
-    color: white;
+    color: black;
 	line-height: 1.6;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: #1F1E1E;
+	background-color: none;
 	padding: 30px;
-	counter-reset: h2counter;
 }
 
 body > *:first-child {
@@ -55,7 +54,7 @@ h1, h2, h3, h4 {
 	-webkit-font-smoothing: antialiased;
 	cursor: text;
 	position: relative;
-	color: white;
+	color: black;
 }
 
 h1 tt, h1 code {
@@ -274,7 +273,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 img {
-	max-width: 100%;
+	max-width: 100%;margin: auto;
 }
 
 span.frame {
@@ -367,7 +366,7 @@ span.float-right > span {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: white;
+	color: #657b83;
 	background: none;
 	text-shadow: 0 -.1em .2em black;
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
@@ -398,7 +397,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-	background: #000000;
+	background: #073642;
 }
 
 /* Code blocks */
