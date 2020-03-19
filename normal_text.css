@@ -106,17 +106,17 @@ h1 {
 	margin-bottom: 16px;
 	counter-reset: h2counter;
 }
-
+/*
 h2 {
 	font-size: 1.5em;
 	line-height: 1.25;
 	margin-bottom: 16px;
 	margin-top: 24px;
-	/*counter-reset: h3counter;*/
+	counter-reset: h3counter;
 }
 
 
-/*
+
 h2:before {
 	content: counter(h2counter) ".\0000a0\0000a0";
 	counter-increment: h2counter;
@@ -127,13 +127,11 @@ h2.nocount:before {
 	content: none;
 	counter-increment: none;
 }
-*/
 
 h3 {
 	font-size: 16px;
 }
 
-/*
 h3:before {
 	content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
 	counter-increment: h3counter;
@@ -144,7 +142,6 @@ h3.nocount:before {
 	counter-increment: none;
 }
 */
-
 h4 {
 	font-size: 14px;
 }
