@@ -407,7 +407,6 @@ pre[class*="language-"] {
 	overflow: auto;
 	border: .3em solid #0A0A0A;
 	border-radius: .5em;
-	box-shadow: 1px 1px .5em black inset;
 }
 
 /* Inline code */
