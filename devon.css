@@ -11,12 +11,13 @@ https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+j
 body {
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 12px;
-    color: black;
+    color: white;
 	line-height: 1.6;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: none;
+	background-color: #1F1E1E;
 	padding: 30px;
+	counter-reset: h2counter;
 }
 
 body > *:first-child {
@@ -54,7 +55,7 @@ h1, h2, h3, h4 {
 	-webkit-font-smoothing: antialiased;
 	cursor: text;
 	position: relative;
-	color: black;
+	color: white;
 }
 
 h1 tt, h1 code {
@@ -273,7 +274,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 img {
-	max-width: 100%;margin: auto;
+	max-width: 100%;
 }
 
 span.frame {
@@ -366,9 +367,9 @@ span.float-right > span {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #657b83;
+	color: white;
 	background: none;
-	text-shadow: 0 -.1em .2em white;
+	text-shadow: 0 -.1em .2em black;
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 1em;
 	text-align: left;
@@ -397,7 +398,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-	background: #073642;
+	background: #000000;
 }
 
 /* Code blocks */
@@ -405,7 +406,9 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
+	border: .3em solid #0A0A0A;
 	border-radius: .5em;
+	box-shadow: 1px 1px .5em black inset;
 }
 
 /* Inline code */
