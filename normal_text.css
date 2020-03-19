@@ -107,6 +107,41 @@ h1 {
 	counter-reset: h2counter;
 }
 
+h2 {
+	font-size: 1.5em;
+	line-height: 1.25;
+	margin-bottom: 16px;
+	margin-top: 24px;
+	counter-reset: h3counter;
+}
+
+
+
+h2:before {
+	content: counter(h2counter) ".\0000a0\0000a0";
+	counter-increment: h2counter;
+}
+
+
+h2.nocount:before {
+	content: none;
+	counter-increment: none;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h3:before {
+	content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+	counter-increment: h3counter;
+}
+
+h3.nocount:before {
+	content: none;
+	counter-increment: none;
+}
+
 h4 {
 	font-size: 14px;
 }
@@ -403,6 +438,48 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	background-color: #f6f6f6;border:1px solid #ccc;border-spacing:0;margin-top:10px
 }
+
+pre[class*="language-"].line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
