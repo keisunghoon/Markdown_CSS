@@ -368,7 +368,7 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: #657b83;
 	background: none;
-	text-shadow: 0 -.1em .2em black;
+	text-shadow: 0 -.1em .2em white;
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 1em;
 	text-align: left;
