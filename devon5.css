@@ -352,11 +352,12 @@ pre[class*="language-"] {
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 1em;
 	text-align: left;
-	white-space: pre;
+	white-space: pre-wrap;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
+	border-radius: .5em;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -378,6 +379,7 @@ pre[class*="language-"] {
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
 	background: #000000;
+	white-space: normal;
 }
 
 /* Code blocks */
@@ -385,7 +387,7 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-	border: .3em solid #eeeeee;
+	border: 0 solid #eeeeee;
 	border-radius: .5em;
 	box-shadow: 1px 1px .5em black inset;
 }
@@ -394,10 +396,10 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"] {
   background-color: red;
 	padding: .15em .2em .05em;
-	border-radius: .3em;
-	border: .13em solid black;
+	border-radius: .5em;
+	border: 0 solid black;
 	box-shadow: 1px 1px .3em -.1em black inset;
-	white-space: normal;
+	white-space: pre-wrap;
 }
 
 .token.comment,
@@ -699,7 +701,7 @@ div.code-toolbar > .toolbar span:focus {
 	color: #e36209;
 }
 
-.box{
+.linecodes{
 	display:inline-block;
 	padding-left:2%;
 	padding-right:2%;
