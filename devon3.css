@@ -700,11 +700,26 @@ div.code-toolbar > .toolbar span:focus {
 	color: #e36209;
 }
 
-.box{
+.linecode{
 	display:inline-block;
 	padding-left:2%;
 	padding-right:2%;
 	border-radius:.3em;
 	background-color: black;
 	color:white
+}
+
+.box,
+.box_done,
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.task-list-item+.task-list-item {
+  margin-top: 3px;
 }
