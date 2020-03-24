@@ -1,13 +1,3 @@
-/* PrismJS 1.16.0
-https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript+actionscript+c+bash+cpp+cmake+ruby+diff+markup-templating+git+http+java+php+json+latex+markdown+lua+makefile+matlab+objectivec+perl+sql+python+swift+visual-basic+vhdl+vim+wiki&plugins=line-highlight+line-numbers+file-highlight+toolbar+highlight-keywords+remove-initial-line-feed+command-line+show-language+copy-to-clipboard */
-/**
- * prism.js Dark theme for JavaScript, CSS and HTML
- * Based on the slides of the talk “/Reg(exp){2}lained/”
- * @author Lea Verou
- */
-
-/* Modified by Jason Yoon */
-
 body {
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 12px;
@@ -77,45 +67,24 @@ h4 tt, h4 code {
 h1 {
 	font-size: 24px;
 	line-height: 1.25;
-	border-bottom: 1px solid #eaecef;
+	border-bottom: 2px solid #eaecef;
 	padding-bottom: .3em;
 	margin-bottom: 16px;
-	counter-reset: h2counter;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 20em;
 	line-height: 1.25;
 	margin-bottom: 16px;
 	margin-top: 24px;
 }
 
-h2:before {
-	content: counter(h2counter) ".\0000a0\0000a0";
-	counter-increment: h2counter;
-}
-
-h2.nocount:before {
-	content: none;
-	counter-increment: none;
-}
-
 h3 {
-	font-size: 18px;
-}
-
-h3:before {
-	content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
-	counter-increment: h3counter;
-}
-
-h3.nocount:before {
-	content: none;
-	counter-increment: none;
+	font-size: 16px;
 }
 
 h4 {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 p, blockquote, ul, ol, dl, li, table, pre {
@@ -367,16 +336,18 @@ span.float-right > span {
 
 code[class*="language-"],
 pre[class*="language-"] {
+	padding: 0;
+	margin: .5em 0;
+	overflow: auto;
 	color: white;
 	background: none;
+	text-shadow: 0 -.1em .2em black;
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 1em;
 	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
+	white-space: pre-wrap;
 	line-height: 1.5;
+	border-radius: .5em;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -398,6 +369,7 @@ pre[class*="language-"] {
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
 	background: #000000;
+  white-space: pre-wrap;
 }
 
 /* Code blocks */
@@ -413,23 +385,23 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	background-color: #eee;
+  background-color: black;
 	padding: .15em .2em .05em;
 	border-radius: .3em;
 	border: .13em solid black;
 	box-shadow: 1px 1px .3em -.1em black inset;
-	white-space: normal;
+	white-space: pre-wrap;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #999;
+	color: hsl(30, 20%, 50%);
 }
 
 .token.punctuation {
-	color: #ccc;
+	opacity: .7;
 }
 
 .namespace {
@@ -508,7 +480,7 @@ pre[data-line] {
 	pointer-events: none;
 
 	line-height: inherit;
-	white-space: pre;
+	white-space: pre-pre-wrap;
 }
 
 	.line-highlight:before,
@@ -548,7 +520,7 @@ pre[class*="language-"].line-numbers {
 
 pre[class*="language-"].line-numbers > code {
 	position: relative;
-	white-space: inherit;
+	white-space: pre-wrap;
 }
 
 .line-numbers .line-numbers-rows {
@@ -720,11 +692,11 @@ div.code-toolbar > .toolbar span:focus {
 	color: #e36209;
 }
 
-.linecode{
+.linecodes{
 	display:inline-block;
 	padding-left:2%;
 	padding-right:2%;
-	border-radius:.4em;
+	border-radius:.3em;
 	background-color: black;
 	color:white
 }
