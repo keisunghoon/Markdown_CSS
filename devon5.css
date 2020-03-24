@@ -379,7 +379,6 @@ pre[class*="language-"] {
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
 	background: #000000;
-	white-space: normal;
 }
 
 /* Code blocks */
