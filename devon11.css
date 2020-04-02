@@ -359,7 +359,7 @@ span.float-right > span {
 code[class*="language-"],
 pre[class*="language-"] {
 	color: white !important;
-	background: none !important;
+	background: black !important;
 	text-shadow: 0 -.1em .2em black !important;
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
 	font-size: 1em !important;
