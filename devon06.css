@@ -1,3 +1,13 @@
+/* PrismJS 1.16.0
+https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript+actionscript+c+bash+cpp+cmake+ruby+diff+markup-templating+git+http+java+php+json+latex+markdown+lua+makefile+matlab+objectivec+perl+sql+python+swift+visual-basic+vhdl+vim+wiki&plugins=line-highlight+line-numbers+file-highlight+toolbar+highlight-keywords+remove-initial-line-feed+command-line+show-language+copy-to-clipboard */
+/**
+ * prism.js Dark theme for JavaScript, CSS and HTML
+ * Based on the slides of the talk “/Reg(exp){2}lained/”
+ * @author Lea Verou
+ */
+
+/* Modified by Jason Yoon */
+
 /*
 
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
