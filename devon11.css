@@ -210,18 +210,18 @@ dl dd > :last-child {
 }
 
 blockquote {
-	background:#F7F7F7 !important;
-	border-left:10px solid #2571B8 !important;
-	margin-left: 1.5rem 10px !important;
-	padding: 0.5em 10px !important;
+	background:#F7F7F7;
+	border-left:10px solid #2571B8;
+	margin-left: 1.5rem 10px;
+	padding: 0.5em 10px;
 }
 
 blockquote > :first-child {
-	margin-top: 0 !important;
+	margin-top: 0;
 }
 
 blockquote > :last-child {
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 }
 
 table {
@@ -356,17 +356,38 @@ span.float-right > span {
 	text-align: right;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
-	color: white !important;
-	background: black !important;
-	text-shadow: 0 -.1em .2em black !important;
-	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
-	font-size: 1em !important;
-	text-align: left !important;
-	line-height: 1.5 !important;
-	border-radius: .5em !important;
+code[class*="language-"] {
+	color: #ccc;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"] {
+	color: #ccc;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	white-space: pre-wrap !important;
+	line-height: 1.5;
+	border-radius: .5em;
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
@@ -386,22 +407,20 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em !important;
-	margin: .5em 0 !important;
-  word-wrap: break-word !important;
-	word-break: keep-all !important;
-	text-overflow:clip !important;
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #2d2d2d !important;
+	background: #2d2d2d;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em !important;
-	border-radius: .3em !important;
+	padding: .1em;
+	border-radius: .3em;
 }
 
 .token.comment,
@@ -530,14 +549,14 @@ pre[data-line] {
 }
 
 pre[class*="language-"].line-numbers {
-	position: relative !important;
-	padding-left: 3.8em !important;
-	counter-reset: linenumber !important;
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
 }
 
 pre[class*="language-"].line-numbers > code {
-	position: relative !important;
-	white-space: inherit !important;
+	position: relative;
+	white-space: inherit;
 }
 
 .line-numbers .line-numbers-rows {
