@@ -356,46 +356,25 @@ span.float-right > span {
 	text-align: right;
 }
 
-code[class*="language-"] {
-	color: #ccc;
-	background: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
+code[class*="language-"],
 pre[class*="language-"] {
-	color: #ccc;
-	background: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	white-space: pre-wrap !important;
-	line-height: 1.5;
-	border-radius: .5em;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
+	color: white !important;
+	background: none !important;
+	text-shadow: 0 -.1em .2em black !important;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
+	font-size: 1em !important;
+	text-align: left !important;
+	line-height: 1.5 !important;
+	border-radius: .5em !important;
 
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+	-moz-tab-size: 4 !important;
+	-o-tab-size: 4 !important;
+	tab-size: 4 !important;
+
+	-webkit-hyphens: none !important;
+	-moz-hyphens: none !important;
+	-ms-hyphens: none !important;
+	hyphens: none !important;
 }
 
 @media print {
@@ -407,20 +386,22 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+	padding: 1em !important;
+	margin: .5em 0 !important;
+  word-wrap: break-word !important;
+	word-break: keep-all !important;
+	text-overflow:clip !important;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #2d2d2d;
+	background: #2d2d2d !important;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+	padding: .1em !important;
+	border-radius: .3em !important;
 }
 
 .token.comment,
@@ -549,9 +530,9 @@ pre[data-line] {
 }
 
 pre[class*="language-"].line-numbers {
-	position: relative;
-	padding-left: 3.8em;
-	counter-reset: linenumber;
+	position: relative !important;
+	padding-left: 3.8em !important;
+	counter-reset: linenumber !important;
 }
 
 pre[class*="language-"].line-numbers > code {
